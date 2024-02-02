@@ -93,9 +93,6 @@
 
 #endif
 
-#define l_randomizePivot() (*(unsigned int*)"Lua\0Lua\0")
-#define luai_makeseed(L) (getenv("LUA_SEED")? (unsigned int)atoi(getenv("LUA_SEED")): l_randomizePivot())
-
 
 #if defined(_MSC_VER) && !defined(__SANITIZE_ADDRESS__)
 
