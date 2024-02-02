@@ -76,7 +76,7 @@ inline void _bee_lua_apicheck(lua_State* L, const char* message, const char* fil
 #    define luai_apicheck(l, expression) (void)((!!(expression)) || (_bee_lua_apicheck(l, #expression, __FILE__, (unsigned)(__LINE__)), 0))
 #endif
 
-#define l_randomizePivot() (~0)
+#define l_randomizePivot(L) (~0)
 
 #if defined(_MSC_VER) && !defined(__SANITIZE_ADDRESS__)
 
